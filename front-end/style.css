@@ -1,0 +1,170 @@
+:root {
+    --primary: #c7d2fe;    /* Lilás dos botões */
+    --bg-page: #ececf9;    /* Fundo lilás claro */
+    --text-main: #1e293b;  /* Azul escuro/Preto */
+    --input-bg: #f8faff;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: var(--bg-page);
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+/* --- HEADER & LOGO --- */
+header {
+    display: flex;
+    justify-content: center; /* Centralizado como no seu print */
+    padding: 20px;
+    gap: 40px;
+}
+
+.logo-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.logo-box img {
+    width: 40px; /* Seu Group 5.svg */
+}
+
+/* --- LINKS DE NAVEGAÇÃO --- */
+nav {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.nav-link {
+    background: var(--white);
+    padding: 8px 25px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border: 1px solid #d1d5db;
+}
+
+/* --- CARDS (Login e Cadastro) --- */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    background: var(--white);
+    padding: 40px;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.card-login { /* Layout de duas colunas para o Login */
+    max-width: 900px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.info-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* --- FORMULÁRIOS --- */
+h2 {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    margin: 8px 0;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    background: var(--input-bg);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary);
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* --- CONSULTA / TABELA --- */
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.search-container img {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px; /* Seu Vector.svg */
+}
+
+#inputBusca {
+    padding-left: 45px;
+    border-radius: 30px;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+}
+
+th {
+    padding: 10px;
+    text-align: left;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+tr {
+    background: var(--white);
+}
+
+td {
+    padding: 15px 10px;
+}
+
+td:first-child { border-radius: 15px 0 0 15px; }
+td:last-child { border-radius: 0 15px 15px 0; }
+
+.btn-edit { background: #c7d2fe; padding: 5px 15px; border-radius: 8px; margin-right: 5px; width: auto; }
+.btn-delete { background: #e2e8f0; padding: 5px 15px; border-radius: 8px; width: auto; }

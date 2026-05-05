@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Bibliotecando - Cadastro de Livros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="nav-link" style="border-color: #4f46e5;">CADASTRO</a>
+            <a href="consulta.html" class="nav-link">CONSULTA / ACERVO</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <div class="logo-box">
+                <img src="Group 5.svg" alt="Logo">
+                <h2>CADASTRAR LIVRO</h2>
+            </div>
+            <input type="text" id="titulo" placeholder="Título do livro">
+            <input type="text" id="autor" placeholder="Autor">
+            <input type="text" id="isbn" placeholder="ISBN ( Identificador )">
+            <input type="number" id="ano" placeholder="Ano de publicação">
+            <button onclick="cadastrarLivro()">Finalizar cadastro</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

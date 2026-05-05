@@ -1,0 +1,28 @@
+// Gerador do Prisma Client
+generator client {
+  provider = "prisma-client-js"
+}
+
+// Fonte de dados (Conectando ao MySQL/MariaDB)
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Modelo da tabela Livro
+model Livro {
+  id            Int      @id @default(autoincrement())
+  titulo        String
+  autor         String
+  isbn          String   @unique
+  anoPublicacao Int
+  criadoEm      DateTime @default(now())
+  atualizadoEm  DateTime @updatedAt
+
+  @@map("livros")
+}
+model Usuario {
+  id    Int    @id @default(autoincrement())
+  email String @unique
+  senha String
+}
