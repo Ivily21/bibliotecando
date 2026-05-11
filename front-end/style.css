@@ -19,10 +19,9 @@ body {
     min-height: 100vh;
 }
 
-/* --- HEADER & LOGO --- */
 header {
     display: flex;
-    justify-content: center; /* Centralizado como no seu print */
+    justify-content: center; 
     padding: 20px;
     gap: 40px;
 }
@@ -35,10 +34,9 @@ header {
 }
 
 .logo-box img {
-    width: 40px; /* Seu Group 5.svg */
+    width: 40px; 
 }
 
-/* --- LINKS DE NAVEGAÇÃO --- */
 nav {
     display: flex;
     gap: 15px;
@@ -56,7 +54,6 @@ nav {
     border: 1px solid #d1d5db;
 }
 
-/* --- CARDS (Login e Cadastro) --- */
 .container {
     display: flex;
     justify-content: center;
@@ -73,7 +70,7 @@ nav {
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
-.card-login { /* Layout de duas colunas para o Login */
+.card-login { 
     max-width: 900px;
     display: flex;
     gap: 50px;
@@ -87,7 +84,6 @@ nav {
     text-align: justify;
 }
 
-/* --- FORMULÁRIOS --- */
 h2 {
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -119,7 +115,6 @@ button {
     margin-top: 15px;
 }
 
-/* --- CONSULTA / TABELA --- */
 .search-container {
     position: relative;
     width: 100%;
@@ -132,7 +127,7 @@ button {
     left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    width: 18px; /* Seu Vector.svg */
+    width: 18px; 
 }
 
 #inputBusca {
